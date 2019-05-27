@@ -7,6 +7,7 @@
 body{
 	font-size:16px;
 }
+                                                  /*INDEX*/
 .blockmenu{
     display: flex;
     justify-content: space-between;
@@ -50,17 +51,17 @@ label{
 	margin:186px 0 0 0;
 }
 .blockhomeText{
-	width:40vw;
+	max-width:40vw;
 	font: 2rem Roboto Slab;
     font-weight:700;
 	color: #fff;
 	text-align: center;
+	margin-top: 30px;
 }
 @media(max-width:768px){
 	label{
 		display:block;
 	}
-
  	.menu{
 		display: none;
 	}
@@ -82,34 +83,432 @@ label{
 		padding: 10px 25px 0 10px;
 	}
 	.blockmenu:hover{
-		background-color:#fff;
+		position: static;
+	}
+	.blockhomeImage{
+		width:80vw;
+		margin: 77px 0 0 0;
+	}
+	.blockhomeText{
+		max-width: 68vw;
+    	font-size: 1.5rem;
 	}
 }
-.containersobre{
+@media(max-width: 425px){
+	.menuLink{
+		font-size:1rem;
+		font-weight: 400;
+	}
+	.blockhomeText{
+		max-width: 100vw;
+	}	
+}
+.containerabout{
 	display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 47px 0 0 0;
 }
-.containersobreBlock{
+.containeraboutBlock{
 	width: 60vw;
     padding: 0px 88px 0 31px;
 }
-.sobreBlock__title{
-    font: 3.6rem Roboto Slab;
+.aboutBlock__title{
+    font: 3rem Roboto Slab;
     font-weight:700;
     color: #00923F;
 }
-.sobreBlock__text{
-	font:1rem Roboto Slab;
-	font-weight:400;
+.aboutBlock__text, .containerimpactBlock__text{
+	font:.86rem Roboto Slab;
+	font-weight:300;
 	margin: 10px 0 23px 0;
 }
-.sobreBlock__link{
+.aboutBlock__link{
 	font:1.6rem Roboto Slab;
 	font-weight:700;
 	color:#E67816;
 }
-.sobreBlock__image{
+.aboutBlock__image{
 	width:40vw;
+}
+.aboutBlock__imagemobile{
+	display:none;
+}
+@media(max-width:768px){
+	.containerabout{
+		flex-direction:column;
+	}
+	.containeraboutBlock{
+		min-width:90vw;
+		padding:0;
+	}
+	.aboutBlock__title, .aboutBlock__link{
+		font-weight:300;
+	} 
+	.aboutBlock__image{
+		display: none;
+	}
+	.aboutBlock__imagemobile{
+		width:100vw;
+		display: block;
+		margin-top:30px;
+	}
+}
+.containeraction{
+	min-height:70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top:45px;
+	background-image: url(assets/fundo-acoes.jpg);
+	background-repeat: no-repeat;
+}
+.containeraction:after{
+	content:'';
+	width:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    opacity: 0.8;
+    background-color: #85C226;    
+}
+.containeractionBlockfirst{
+	display: flex;
+	flex-direction: column;
+	z-index: 5;
+	margin-left: 30px;
+}
+.containeractionBlockfirst__title{
+	font: 3rem RobotoSlab;
+	font-weight: 800;
+	color: #fff;
+	background-color: transparent;
+}
+.containeractionBlockfirst__link{
+	width:fit-content;
+	font-size: 1.8rem;
+	font-weight:700;
+	color: #E67816;
+	padding:9px;
+	background-color: #fff;
+}
+.containeractionBlockcalendar{
+	width:30%;
+	height:65vh;
+	display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+	z-index: 5;
+	margin-right:30px;
+	background-color: #fff;
+}
+.blockcalendarTitle{
+	font:1.4rem RobotoSlab;
+	font-weight:400;
+	color: #00923F;
+	margin-left: 13px;
+}
+.blockcalendarBlocks{
+	display: flex;
+	align-items: center;
+}
+.blockcalendarDate{
+	width:20%;
+	text-align: center;
+}
+.blockcalendarDate__Text{
+	font:2.5rem RobotoSlab;
+	font-weight:530;
+	color:#85C226;
+}
+.blockcalendarDate__Textsecond{
+	font:1rem RobotoSlab;
+	font-weight:400;
+	color:#85C226;
+}
+.blockcalendarAddress__textfirst{
+	font:.9rem RobotoSlab;
+	font-weight:700;
+	color: #85C226;
+}
+.blockcalendarAddress__text{
+	font:.8rem RobotoSlab;
+	font-weight: 700;
+	color: #7AC49F;
+}
+hr{
+	width:90%;
+	margin-left:10px
+}
+.seta{
+	font-size:2rem;
+	color: #85C226;
+	opacity: 1;
+	margin-left: 90%;
+	display: none;
+}
+#showcalendar{
+	display: none;
+}
+@media(max-width:768px){
+	.containeraction{
+		flex-direction: column;
+		top: 0;
+	}
+	.containeractionBlockfirst{
+		min-width:90%;
+		margin: 0;
+	}
+	.containeractionBlockfirst__title{
+		font-size: 2.8rem;
+		height: 65px;
+	}
+	.containeractionBlockfirst__link{
+		font-size:1.5rem;
+	}
+	.containeractionBlockcalendar{
+		width:90%;
+		height:auto;
+		margin:10px 0 0 0;
+	}
+	.calendarblocksmobile{
+		display:none;
+	}
+	hr{
+		display: none;
+	}
+	.seta{
+		display:block;
+	}
+	#showcalendar:checked ~ .calendarblocksmobile{
+		display: flex;
+	}
+}
+@media(max-width: 375px){
+	.containeractionBlockfirst__link{
+		font-size:1.1rem;
+	}
+}
+.containerimpact{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333333;
+	margin-top: 45px;
+}
+.containerimpactBlock{
+	max-width:40%;
+	padding:0 10px 0 20px;
+	margin-top:30px;
+}
+.containerimpactBlock__title{
+	font:3rem RobotoSlab;
+	font-weight: 700;
+	color: #85C226
+}
+
+.containerimpactBlock__text{
+	color: #fff;
+}
+@media(max-width:768px){
+	.containerimpact{
+		flex-direction:column;
+		margin: 0;
+	}
+	.containerimpactBlock{
+		max-width:90%;
+	}
+}
+.containercollect{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 20px 50px 20px;
+}
+.containercollectBlock{
+	max-width:40%;
+	padding: 0 10px 0 0;
+}
+.containercollectBlock__title{
+	font:2.3rem RobotoSlab;
+	font-weight: 700;
+	color: #00923F;
+}
+.containercollectBlock__descrition{
+	font:1.6rem RobotoSlab;
+	font-weight:700;
+	color: #85C226;
+}
+.containercollectDescrition{
+	min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.containercollectBlock__block{
+	display: flex;
+	justify-content: flex-end;
+}
+.containercollectBlock__blockText{
+	height:25px;
+	font:1rem RobotoSlab;
+	font-weight: 400;
+	color: #E67816;
+	margin-right: 3px;
+}
+.containercollectBlock__blockBall{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color:#00923F;
+}
+.orange{
+	background-color: #E67816;
+}
+.containercollectImage{
+	min-width: 58%;
+}
+@media(max-width: 768px){
+	.containercollect{
+		flex-direction: column;
+	}
+	.containercollectBlock{
+		max-width:70%;
+	}
+	.containercollectBlock__title{
+		font-weight:400;
+	}
+	.containercollectDescrition{
+		margin-top:42px;
+	}
+	.containercollectBlock__block{
+		flex-direction: row-reverse;
+	}
+	.containercollectBlock__blockText{
+		margin-left: 3px;
+	}
+}
+@media(max-width: 425px){
+	.containercollectBlock{
+		max-width:90%;
+	}
+}
+.containervocesabe{
+	padding: 40px 20px 20px 20px;
+	background-color: #85C226;
+}
+.containervocesabeTitle{
+	font:3rem RobotoSlab;
+	font-weight:700;
+	color: #fff;
+}
+.containervocesabeText{
+	height:50px;
+	font:2rem RobotoSlab;
+	font-weight: 700;
+	color: #00923F;
+}
+.containervocesabeBlock{
+	display:flex;
+	justify-content: space-between;
+}
+.containervocesabeBlock__link{
+	width:30%;
+	font:2.9rem RobotoSlab;
+	font-weight:700;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.containervocesabeBlock__link:after{
+	content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    background-color: #E67816;
+}
+.containervocesabeBlock__linkBlockfirst{
+	height:50vh;
+	background-image:url(assets/meioambiente.jpg);
+	background-size:cover;
+}
+.containervocesabeBlock__linkBlocksecond{
+	height:50vh;
+	background-image:url(assets/saude.jpg);
+	background-size:cover;
+}
+.containervocesabeBlock__linkBlockthird{
+	height:50vh;
+	background-image:url(assets/consumoconsciente.jpg);
+	background-size:cover;
+}
+@media(max-width: 768px){
+	.containervocesabeBlock{
+		flex-direction: column;
+	}
+	.containervocesabeBlock__link{
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #333333;
+}
+.blockfootercontact, .blockfootersecond, .blockfooterthird{
+	max-width:28%;
+	padding: 30px 27px 30px 30px;
+}
+.blockfootercontactText{
+	font:1.5rem RobotoSlab;
+	font-weight:700;
+	color: #85C226
+}
+.blockfootercontactAddress{
+	font:.8rem RobotoSlab;
+	font-weight:300;
+	color: #85C226;
+	margin-top:10px;	
+}
+.blockfootercontactNumber, .blockfootercontatoFacebook{
+	max-width:161px;
+	display: flex;
+	justify-content: space-between;
+	color: #85C226;
+	margin-top:20px;
+}
+.blockfootercontatoFacebook{
+	max-width:200px;
+	color: #E67816;
+}
+.contacticon{
+	width:20px;
+	height: 20px;
+}
+.blockfootersecondTitle, .blockfooterthirdTitle{
+	font:1rem RobotoSlab;
+	font-weight:700;
+	color: #85C226;
+}
+.blockfootersecondText, .blockfooterthirdTexts{
+	font:.8rem RobotoSlab;
+	font-weight:100;
+	color: #85C226;
+	margin-top:10px;
+}
+.blockfooterthirdBlock{
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width: 768px){
+	footer{
+		flex-direction: column;
+	}
+	.blockfootercontact, .blockfootersecond, .blockfooterthird{
+		max-width: 90%;
+	}
 }

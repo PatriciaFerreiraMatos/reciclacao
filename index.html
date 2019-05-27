@@ -15,12 +15,12 @@
 				<input type="checkbox" id="mobilemenu">
 				<img src="assets/Logo_P.svg" alt="logoReciclação" class="blockmenuLogo">
 				<nav class="menu">
-					<a href="" class="menuLink">Sobre</a>
-					<a href="" class="menuLink">Ações</a>
-					<a href="" class="menuLink">Impacto</a>
-					<a href="" class="menuLink">Pontos de Coleta</a>
-					<a href="" class="menuLink">Você Sabe?</a>
-					<a href="" class="menuLink">Contato</a>
+					<a href="sobre.html" class="menuLink">Sobre</a>
+					<a href="acoes.html" class="menuLink">Ações</a>
+					<a href="#impacto" class="menuLink">Impacto</a>
+					<a href="#pontos-coleta" class="menuLink">Pontos de Coleta</a>
+					<a href="#vocesabe" class="menuLink">Você Sabe?</a>
+					<a href="#contatos" class="menuLink">Contato</a>
 				</nav>
 			</div>
 			<div class="blockhome">
@@ -29,15 +29,173 @@
 			</div>
 		</header>
 		<main>
-			<section class="containersobre">
-				<div class="containersobreBlock">
-					<h1 class="sobreBlock__title">Sobre nós</h1>
-					<p class="sobreBlock__text">O Reciclação propõe estimular e mobilizar a comunidade a descartar adequadamente seus materiais recicláveis, retirando-os do meio ambiente e dando origem a um ciclo fértil e produtivo que retorna em forma de recursos locais, com ênfase na educação e na cooperação.</p>
-					<p class="sobreBlock__text">O projeto Reciclação começou 3 anos após o desabamento do campinho, ma Rua Gomes Lopes em 2010, provocado pelo temporal e acúmulo de lixo nas encostas. 36 pessoas morreram e 7mil ficaram desabrigadas. A partir disso o grupo PROA, junto com a Cris dos Prazeres e sua equipe de trabalho, criaram o projeto Reciclação para promover ações de conservação e conscientização ambiental no morro dos Prazeres, concentradas no bem-estar das pessoas através do combate de doenças como dengue, zica e chikingunya e outras doenças causadas por acúmulo de lixo.</p>
-					<a href="" class="sobreBlock__link">Saiba mais >></a>
+			<section class="containerabout" id="sobre">
+				<div class="containeraboutBlock">
+					<h1 class="aboutBlock__title">Sobre nós</h1>
+					<p class="aboutBlock__text">O Reciclação propõe estimular e mobilizar a comunidade a descartar adequadamente seus materiais recicláveis, retirando-os do meio ambiente e dando origem a um ciclo fértil e produtivo que retorna em forma de recursos locais, com ênfase na educação e na cooperação.</p>
+					<p class="aboutBlock__text">O projeto Reciclação começou 3 anos após o desabamento do campinho, ma Rua Gomes Lopes em 2010, provocado pelo temporal e acúmulo de lixo nas encostas. 36 pessoas morreram e 7mil ficaram desabrigadas. A partir disso o grupo PROA, junto com a Cris dos Prazeres e sua equipe de trabalho, criaram o projeto Reciclação para promover ações de conservação e conscientização ambiental no morro dos Prazeres, concentradas no bem-estar das pessoas através do combate de doenças como dengue, zica e chikingunya e outras doenças causadas por acúmulo de lixo.</p>
+					<a href="sobre.html" class="aboutBlock__link">Saiba mais >></a>
 				</div>
-				<img src="assets/desabamento3.jpg" alt="desabamento" class="sobreBlock__image">
+				<img src="assets/desabamento3.jpg" alt="desabamento" class="aboutBlock__image">
+				<img src="assets/01.jpg" alt="um homem separando lixos recicláveis" class="aboutBlock__imagemobile">
+			</section>
+			<section class="containeraction">
+				<div class="containeractionBlockfirst">
+					<h1 class="containeractionBlockfirst__title">Ações</h1>
+					<a href="" class="containeractionBlockfirst__link">Encontro com Escolas >> </a>
+					<a href="" class="containeractionBlockfirst__link">Café no Ponto >> </a>
+					<a href="" class="containeractionBlockfirst__link">Palestras temáticas >> </a>
+					<a href="" class="containeractionBlockfirst__link">Multirão de Limpeza >> </a>
+					<a href="" class="containeractionBlockfirst__link">10 min contra o Aedes Aegypti >> </a>
+					<a href="" class="containeractionBlockfirst__link">Coleta seletiva >> </a>
+				</div>
+				<div class="containeractionBlockcalendar">
+					<h1 class="blockcalendarTitle">Próximas ações</h1>
+					<div class="blockcalendarBlocks">
+						<div class="blockcalendarDate">
+							<p class="blockcalendarDate__Text">13</p>
+							<p class="blockcalendarDate__Textsecond">nov</p>
+						</div>
+						<div class="blockcalendarAddress">
+							<p class="blockcalendarAddress__textfirst">Café no ponto</p>
+							<p class="blockcalendarAddress__text">Rua Evaristo da Veiga, Centro</p>
+							<p class="blockcalendarAddress__text">06:00h</p>							
+						</div>
+					</div>
+					<hr>
+					<div class="blockcalendarBlocks">
+						<div class="blockcalendarDate">
+							<p class="blockcalendarDate__Text">27</p>
+							<p class="blockcalendarDate__Textsecond">nov</p>
+						</div>
+						<div class="blockcalendarAddress">
+							<p class="blockcalendarAddress__textfirst">Encontro na Escola Municipal</p>
+							<p class="blockcalendarAddress__text">Rua 2, Pedreira</p>
+							<p class="blockcalendarAddress__text">10:30h</p>
+						</div>
+					</div>
+					<hr>
+					<label for="showcalendar" class="seta">&#9662;</label>
+					<input type="checkbox" id="showcalendar">
+					<div class="blockcalendarBlocks calendarblocksmobile">
+						<div class="blockcalendarDate">
+							<p class="blockcalendarDate__Text">01</p>
+							<p class="blockcalendarDate__Textsecond">dez</p>
+						</div>
+						<div class="blockcalendarAddress">
+							<p class="blockcalendarAddress__textfirst">Mutirão de limpeza</p>
+							<p class="blockcalendarAddress__text">Praça do futebol, Barreira</p>
+							<p class="blockcalendarAddress__text">08:30h</p>
+						</div>
+					</div>
+					<hr>
+					<div class="blockcalendarBlocks calendarblocksmobile">
+						<div class="blockcalendarDate">
+							<p class="blockcalendarDate__Text">22</p>
+							<p class="blockcalendarDate__Textsecond">dez</p>
+						</div>
+						<div class="blockcalendarAddress">
+							<p class="blockcalendarAddress__textfirst">Bingo de Natal</p>
+							<p class="blockcalendarAddress__text">Associação de moradores</p>
+							<p class="blockcalendarAddress__text">14:00h</p>
+						</div>
+					</div>
+					<hr>
+					<div class="blockcalendarBlocks calendarblocksmobile">
+						<div class="blockcalendarDate">
+							<p class="blockcalendarDate__Text">05</p>
+							<p class="blockcalendarDate__Textsecond">jan</p>
+						</div>
+						<div class="blockcalendarAddress">
+							<p class="blockcalendarAddress__textfirst">Reunião no bar do Tino</p>
+							<p class="blockcalendarAddress__text">Rua Alm. Alexandrino, St. Teresa</p>
+							<p class="blockcalendarAddress__text">17:30h</p>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section class="containerimpact">
+				<div class="containerimpactBlock">
+					<h1 class="containerimpactBlock__title">Impacto gerado</h1>
+					<p class="containerimpactBlock__text">O Reciclação propõe estimular e mobilizar a comunidade a descartar adequadamente seus materiais recicláveis, retirando-os do meio ambiente e dando origem a um ciclo fértil e produtivo que retorna em forma de recursos locais, com ênfase na educação e na cooperação.</p>
+					<p class="containerimpactBlock__text">O projeto Reciclação começou 3 anos após o desabamento do campinho, ma Rua Gomes Lopes em 2010, provocado pelo temporal e acúmulo de lixo nas encostas. 36 pessoas morreram e 7mil ficaram desabrigadas. A partir disso o grupo PROA, junto com a Cris dos Prazeres e sua equipe de trabalho, criaram o projeto Reciclação para promover ações de conservação e conscientização ambiental no morro dos Prazeres, concentradas no bem-estar das pessoas através do combate de doenças como dengue, zica e chikingunya e outras doenças causadas por acúmulo de lixo.</p>
+				</div>
+				<img src="assets/grafico.png" alt="grafico do impacto" class="containerimpactImage">
+			</section>
+			<section class="containercollect">
+				<div class="containercollectBlock">
+					<h1 class="containercollectBlock__title">Pontos de coleta</h1>
+					<p class="containercollectBlock__descrition">Saiba onde está o ponto mais próximo da sua casa!</p>
+					<span class="containercollectDescrition">
+						<div class="containercollectBlock__block">
+							<p class="containercollectBlock__blockText">Ecobags</p>
+							<span class="containercollectBlock__blockBall"></span>
+						</div>
+						<div class="containercollectBlock__block">
+							<p class="containercollectBlock__blockText">Caçamba da Comlurb</p>
+							<span class="containercollectBlock__blockBall orange"></span>
+						</div>
+					</span>
+				</div>
+				<img src="assets/pontosdecoleta.png" alt="pontos de coleta" class="containercollectImage">
+			</section>
+			<section class="containervocesabe">
+				<h1 class="containervocesabeTitle">Você Sabe?</h1>
+				<p class="containervocesabeText">Responda perguntas sobre:</p>
+				<div class="containervocesabeBlock">
+					<a href="" class="containervocesabeBlock__link">
+						<div class="containervocesabeBlock__linkBlockfirst"><p class="vocesabeText">Meio Ambiente</p></div>
+					</a>
+					<a href="" class="containervocesabeBlock__link">
+						<div class="containervocesabeBlock__linkBlocksecond"><p class="vocesabeText">Saúde</p></div>
+					</a>
+					<a href="" class="containervocesabeBlock__link">
+						<div class="containervocesabeBlock__linkBlockthird"><p class="vocesabeText">Consumo Consciente</p></div>
+					</a>
+				</div>
 			</section>
 		</main>
+		<footer>
+			<div class="blockfootercontact">
+				<p class="blockfootercontactText">Contato</p>
+				<p class="blockfootercontactAddress">Rua Gomes Lopes, 12 fundos Morro dos Prazeres - Santa Teresa, RJ</p>
+				<div class="blockfootercontactNumber">
+					<img src="assets/telefone.svg" alt="telefone" class="contacticon">
+					<p class="number">+55 21 99227-6574</p>
+				</div>
+				<div class="blockfootercontatoFacebook">
+					<img src="assets/facebook.svg" alt="telefone" class="contacticon">
+					<p class="facebook">facebook.com/Reciclacao</p>
+				</div>
+			</div>
+			<div class="blockfootersecond">
+				<h1 class="blockfootersecondTitle">Projetos Relacionados</h1>
+				<p class="blockfootersecondText">Jovens Construtores - Morro do Prazeres</p>
+				<p class="blockfootersecondText">Núcleo de Desenvolvimento Econômico Sustentável</p>
+				<p class="blockfootersecondText">Rede Potencializa Lucas do Rio Verde</p>
+				<p class="blockfootersecondText">Centrais de Triagem de Material Reciclável</p>
+				<p class="blockfootersecondText">Rede Potencializa Querência</p>
+			</div>
+			<div class="blockfooterthird">
+				<h1 class="blockfooterthirdTitle">Parceiros</h1>
+				<div class="blockfooterthirdBlock">
+					<p class="blockfooterthirdTexts">BrasilPet</p>
+					<p class="blockfooterthirdTexts">CEDAPS</p>
+				</div>
+				<div class="blockfooterthirdBlock">
+					<p class="blockfooterthirdTexts">COMLURB</p>
+					<p class="blockfooterthirdTexts">SMAC</p>
+				</div>
+				<div class="blockfooterthirdBlock">
+					<p class="blockfooterthirdTexts">Instituto BRF</p>
+					<p class="blockfooterthirdTexts">Recicoleta</p>
+				</div>
+				<div class="blockfooterthirdBlock">
+					<p class="blockfooterthirdTexts">ENACTUS/CEFET-RJ</p>
+					<p class="blockfooterthirdTexts">Grupo PROA</p>
+				</div>
+				<p class="blockfooterthirdTexts">US Environmental Protection Agency - EPa</p>
+			</div>
+		</footer>
 	</body>
 </html>
