@@ -386,6 +386,7 @@ hr{
 		font-weight:400;
 	}
 	.containercollectDescrition{
+		min-height:auto;
 		margin-top:18px;
 	}
 	.containercollectBlock__block{
