@@ -520,7 +520,7 @@ footer{
 		max-width: 90%;
 	}
 }
-                  /*AÇOES*/
+/*AÇOES AÇOESAÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES AÇOES*/
 
 .blocksubmenu{
 	border: 1px solid #7AC49F;
@@ -545,6 +545,7 @@ ul{
 .mobilesubmenu{
 	font-size: 3rem;
 	float: left;
+	position: absolute;
 	margin: 20px 0 0 20px;
 }
 #mobilesubmenu{
@@ -573,32 +574,37 @@ ul{
 /*FAZER DEPOIS O SUB MENU ACIMA*/
 
 .containerencontros, .containercafe,
-.containerpalestras, .containermultirao{
+.containerpalestras, .containermultirao,
+.containeraedes, .containercoleta{
     max-width: 100vw;
     display: flex;
     justify-content: space-between;
     padding:92px 23px 30px 30px;
 }
 .containerencontrosBlock, .containercafeBlock,
-.containerpalestrasBlock, .containermultiraoBlock{
+.containerpalestrasBlock, .containermultiraoBlock,
+.containeraedesBlock, .containercoletaBlock{
     min-width: 40vw;
     height: auto;
     padding:0 68px 0 0;
 }
 .containerencontrosTitle, .containercafeTitle,
-.containerpalestrasTitle, .containermultiraoTitle{
+.containerpalestrasTitle, .containermultiraoTitle,
+.containeraedesTitle, .containercoletaTitle{
 	font:3rem RobotoSlab;
 	font-weight: 700;
 	color: #00923F;
 }
 .containerencontrosText, .containercafeText,
-.containerpalestasText, .containermultiraoText{
+.containerpalestasText, .containermultiraoText,
+.containeraedesText, .containercoletaText{
 	font:.9rem RobotoSlab;
 	font-weight:100;
 	margin-top: 10px;
 }
 .containerencontrosImage, .containercafeImage,
-.containerpalestrasImage, .containermultiraoImage{
+.containerpalestrasImage, .containermultiraoImage,
+.containeraedesImage, .containercoletaImage{
     width: 50vw;
     height: 40vh;
     padding: 0 0 0 15px;
@@ -606,13 +612,15 @@ ul{
 .containercafe{
 	background-color: #333333;
 }
-.containercafeBlock, .containermultiraoBlock{
+.containercafeBlock, .containermultiraoBlock,
+.containercoletaBlock{
 	padding:0 0 0 68px;
 }
 .containercafeTitle{
 	color: #85C226;
 }
-.containercafeText{
+.containercafeText, .containercoletaText,
+.containercoletaTitle{
 	color: #FFFFFF;
 }
 .containerpalestras{
@@ -620,4 +628,44 @@ ul{
 }
 .containerpalestrasTitle{
 	font-size:4rem;
+}
+.containeraedes{
+	background-color: #7AC49F;
+}
+.containeraedesTitle{
+	color:#fff;
+}
+.containercoleta{
+	background-color: #85C226;
+}
+@media(max-width: 768px){
+	.containerencontros, 
+	.containerpalestras, 
+	.containeraedes{
+		flex-direction: column;
+		padding: 92px 31px 30px 13px;
+	}
+	.containercafe,
+	.containermultirao,
+	.containercoleta{
+		flex-direction: column-reverse;
+	}
+	.containerencontrosBlock, .containercafeBlock,
+	.containerpalestrasBlock, .containermultiraoBlock,
+	.containeraedesBlock, .containercoletaBlock{
+		min-width:90vw;
+		padding: 0;
+	}
+	.containerencontrosTitle, .containercafeTitle,
+	.containerpalestrasTitle, .containermultiraoTitle,
+	.containeraedesTitle, .containercoletaTitle{
+		font-size: 2rem;
+	}
+	.containerencontrosImage, .containercafeImage,
+	.containerpalestrasImage, .containermultiraoImage,
+	.containeraedesImage, .containercoletaImage{
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+	}
 }
