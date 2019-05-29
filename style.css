@@ -24,7 +24,7 @@ body{
     padding: 19px 0px 0 0;
 }
 .menuLink{
-    font: 1.3rem Roboto Slab;
+    font: 1.1rem Roboto Slab;
     font-weight:700;
     color: #E67816;
     padding: 0 10px 0 0;
@@ -530,7 +530,9 @@ footer{
 	/*padding: 16px;*/
 }
 .submenuLink{
-	font-size:.9rem;
+	font:.9rem RobotoSlab;
+	font-weight:400;
+	color: #E67816;
 	padding: 10px;
 }
 ul{
@@ -539,4 +541,83 @@ ul{
 }
 .aedes{
 	width:98px;
+}
+.mobilesubmenu{
+	font-size: 3rem;
+	float: left;
+	margin: 20px 0 0 20px;
+}
+#mobilesubmenu{
+	display: none;
+}
+@media(max-width:768px){
+	.blocksubmenu{
+		border: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.mobilesubmenu{
+		margin: 10px 0 0 10px;
+	}
+	#mobilesubmenu:checked ~ .submenu{
+		display: block;
+	}
+	.showmobilelink{
+		display:block;
+	}
+	li{
+		min-width: 50%;
+	}
+}
+/*FAZER DEPOIS O SUB MENU ACIMA*/
+
+.containerencontros, .containercafe,
+.containerpalestras, .containermultirao{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding:92px 23px 30px 30px;
+}
+.containerencontrosBlock, .containercafeBlock,
+.containerpalestrasBlock, .containermultiraoBlock{
+    min-width: 40vw;
+    height: auto;
+    padding:0 68px 0 0;
+}
+.containerencontrosTitle, .containercafeTitle,
+.containerpalestrasTitle, .containermultiraoTitle{
+	font:3rem RobotoSlab;
+	font-weight: 700;
+	color: #00923F;
+}
+.containerencontrosText, .containercafeText,
+.containerpalestasText, .containermultiraoText{
+	font:.9rem RobotoSlab;
+	font-weight:100;
+	margin-top: 10px;
+}
+.containerencontrosImage, .containercafeImage,
+.containerpalestrasImage, .containermultiraoImage{
+    width: 50vw;
+    height: 40vh;
+    padding: 0 0 0 15px;
+}
+.containercafe{
+	background-color: #333333;
+}
+.containercafeBlock, .containermultiraoBlock{
+	padding:0 0 0 68px;
+}
+.containercafeTitle{
+	color: #85C226;
+}
+.containercafeText{
+	color: #FFFFFF;
+}
+.containerpalestras{
+	background-color:#FFF974;
+}
+.containerpalestrasTitle{
+	font-size:4rem;
 }
