@@ -111,7 +111,6 @@ label{
     padding: 47px 0 0 0;
 }
 .containeraboutBlock{
-	width: 60vw;
     padding: 0px 88px 0 31px;
 }
 .aboutBlock__title{
@@ -141,7 +140,7 @@ label{
 	}
 	.containeraboutBlock{
 		min-width:90vw;
-		padding:0;
+		padding:0px 20px 0 31px;
 	}
 	.aboutBlock__title, .aboutBlock__link{
 		font-weight:300;
@@ -184,7 +183,6 @@ label{
 	font: 3rem RobotoSlab;
 	font-weight: 800;
 	color: #fff;
-	background-color: transparent;
 }
 .containeractionBlockfirst__link{
 	width:fit-content;
@@ -259,7 +257,7 @@ hr{
 	}
 	.containeractionBlockfirst{
 		min-width:90%;
-		margin: 0;
+		margin: 35px 0 0 0;
 	}
 	.containeractionBlockfirst__title{
 		font-size: 2.8rem;
@@ -273,11 +271,8 @@ hr{
 		height:auto;
 		margin:10px 0 0 0;
 	}
-	.calendarblocksmobile{
+	.calendarblocksmobile, hr{
 		display:none;
-	}
-	hr{
-		display: none;
 	}
 	.seta{
 		display:block;
@@ -299,7 +294,6 @@ hr{
 	margin-top: 45px;
 }
 .containerimpactBlock{
-	max-width:40%;
 	padding:0 10px 0 20px;
 	margin-top:30px;
 }
@@ -333,7 +327,6 @@ hr{
 	padding: 50px 20px 50px 20px;
 }
 .containercollectBlock{
-	max-width:40%;
 	padding: 0 10px 0 0;
 }
 .containercollectBlock__title{
@@ -596,7 +589,6 @@ footer{
 .containerpalestrasBlock, .containermultiraoBlock,
 .containeraedesBlock, .containercoletaBlock{
     min-width: 40vw;
-    /*height: auto;*/
     padding:0 68px 0 0;
 }
 .containerencontrosTitle, .containercafeTitle,
@@ -669,7 +661,6 @@ footer{
 	.containerencontrosBlock,
 	.containerpalestrasBlock,
 	.containeraedesBlock{
-		/*min-width:90vw;*/
 		padding: 0 20px 0 20px;
 	}
 	.containerencontrosTitle, .containercafeTitle,
@@ -769,7 +760,6 @@ footer{
 	color: #00923F;
 }
 .containerobjetiveBlock{
-	/*max-width:100vw;*/
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
@@ -851,7 +841,6 @@ footer{
 	padding: 80px 50px 30px 50px;
 }
 .containercicloBlock, .containercicloBlockmeio{
-	/*width:80%;*/
 	display:flex;
 	justify-content:space-between;
 	align-items: center;
@@ -906,7 +895,6 @@ footer{
 	.containercicloshowmobile{
 		display: flex;
     	flex-direction: column;
-    	/* justify-content: center; */
     	align-items: center;
     	padding: 114px 0 20px 0;
 	}
@@ -958,4 +946,178 @@ footer{
 	font-weight:100;
 	color: #fff;
 	opacity: .7;
+}
+/*VOCÊ SABE CONSUMO CONSCIENTE VOCÊ SABE CONSUMO CONSCIENTE VOCÊ SABE CONSUMO CONSCIENTE VOCÊ SABE CONSUMO CONSCIENTE VOCÊ SABE CONSUMO CONSCIENTE */
+.containermain{
+	background-color: #85C226;
+}
+.container{
+	max-width:80vw;
+	padding: 40px 20px 20px 20px;
+}
+.containerTitle{
+	font:3.9rem RobotoSlab;
+	font-weight:700;
+	color: #fff;
+}
+.containerText{
+	font:2rem RobotoSlab;
+	font-weight: 700;
+	color: #00923F;
+}
+.containerBlock, .containerBlocksecond,
+.containerBlockthird{
+	margin-top: 82px;
+}
+.containerBlock__question, .containerBlocksecond__question,
+.containerBlockthird__question{
+	font:1.9rem RobotoSlab;
+	font-weight: 700;
+	color: #fff;
+}
+.containerBlock__block, .containerBlocksecond__block,
+.containerBlockthird__block{
+	display: flex;
+	justify-content: space-between;
+}
+.containerBlock__blockSub, .containerBlocksecond__blockSub,
+.containerBlockthird__blockSub{
+	width:24vw;
+	height: 43vh;;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.containerBlock__blockAsnwer, .containerBlock__blockAsnwersecond,
+.containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
+.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird,
+.containerBlockthird__blockAsnwer{
+	width: 20vw;
+	height: 200px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(assets/rato.jpg);
+	background-size: cover;
+	position: relative;
+}
+.containerBlock__blockAsnwersecond{
+	background-image:url(assets/barata.jpg);
+}
+.containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
+.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird{
+	background-color: #E67816;
+	background-image: none;
+}
+.containerBlock__blockAsnwer:after,
+.containerBlock__blockAsnwersecond:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: #E67816;
+}
+.caixaresposta{
+	width: 30px;
+	height: 30px;
+	border:1px solid #7AC49F;
+	margin: 10px 139px 0 0;
+	position: relative;
+}
+.caixarespostaLinhadireita, .caixarespostaLinhadesquerda,
+.Linhaesquerdacerta, .Linhadireitacerta{
+	width: 30px;
+	height:2px;
+	background-color:#E67816;
+	position: absolute;
+	top: 13px;
+    transform: rotate(46deg);
+}
+.caixarespostaLinhadesquerda{
+	transform: rotate(-46deg);
+}
+.Linhaesquerdacerta{
+	width:14px;
+	top: 17px;
+	background-color:#00923F;
+}
+.Linhadireitacerta{
+	top: 12px;
+    left: 7px;
+	transform: rotate(-46deg);
+	background-color:#00923F;
+
+}
+.blocksubText, .secondblock__subText,
+.thirdblock__subText{
+	font:1.8rem RobotoSlab;
+	font-weight: 700;
+	color: #fff;
+	z-index: 10;
+}
+.containerBlockthird__blockAsnwer{
+	background-image:url(assets/148961622_1.jpg);
+	background-size:cover;
+}
+.containerBlockthird__blockAsnwer:after{
+	content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: #E67816;
+}
+@media(max-width:768px){
+	.container{
+		max-width:none;
+	}
+	.containerBlock__blockSub,
+	.containerBlocksecond__blockSub, .containerBlockthird__blockSub{
+		width:30%;
+	}
+	.containerBlock__blockAsnwer, .containerBlock__blockAsnwersecond,
+	.containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
+	.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird,
+	.containerBlockthird__blockAsnwer{
+		min-width: 93%;
+    	height: 32vh;
+	}
+	.containerBlock__question, .containerBlocksecond__question, 
+	.containerBlockthird__question{
+		font-size: 1.3rem;
+	}
+	.blocksubText, .secondblock__subText,
+	.thirdblock__subText{
+		font-size: 1.2rem;
+	}
+	.caixaresposta{
+		margin: 10px 87px 0 0;
+	}
+}
+@media(max-width:606px){
+	.containerTitle{
+		margin-top: 39px;
+	}
+	.containerBlock__block,
+	.containerBlocksecond__block,
+	.containerBlockthird__block {
+		flex-direction: column;
+	}
+	.containerBlock__blockSub, 
+	.containerBlocksecond__blockSub, 
+	.containerBlockthird__blockSub {
+    width: 85%;
+	}
+	.caixaresposta{
+		margin: 10px 191px 0 0;
+	}
 }
