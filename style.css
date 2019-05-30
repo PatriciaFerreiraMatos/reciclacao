@@ -931,5 +931,31 @@ footer{
 	color: #fff;
 }
 .containerresultadoBlock{
-	max-width: 90vw;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.resultadoblock__blocks{
+	max-width:107px;
+	text-align: center;
+	margin-top: 20px;
+}
+.resultadoblocoTextfirst{
+	width: 108px;
+	font:1rem RobotoSlab;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 10px;
+}
+.resultadoblockTextsecond{
+	font:.8rem RobotoSlab;
+	font-weight:400;
+	color: #fff;
+}
+.resultadoblockTextthird{
+	font:.7rem RobotoSlab;
+	font-weight:100;
+	color: #fff;
+	opacity: .7;
 }
