@@ -966,22 +966,22 @@ footer{
 	color: #00923F;
 }
 .containerBlock, .containerBlocksecond,
-.containerBlockthird{
+.containerBlockthird, .containerBlockfourth{
 	margin-top: 82px;
 }
 .containerBlock__question, .containerBlocksecond__question,
-.containerBlockthird__question{
+.containerBlockthird__question, .containerBlockfourth__question{
 	font:1.9rem RobotoSlab;
 	font-weight: 700;
 	color: #fff;
 }
 .containerBlock__block, .containerBlocksecond__block,
-.containerBlockthird__block{
+.containerBlockthird__block, .containerBlockfourth__block{
 	display: flex;
 	justify-content: space-between;
 }
 .containerBlock__blockSub, .containerBlocksecond__blockSub,
-.containerBlockthird__blockSub{
+.containerBlockthird__blockSub, .containerBlockfourth__blockSub{
 	width:24vw;
 	height: 43vh;;
 	display: flex;
@@ -1081,7 +1081,8 @@ footer{
 		max-width:none;
 	}
 	.containerBlock__blockSub,
-	.containerBlocksecond__blockSub, .containerBlockthird__blockSub{
+	.containerBlocksecond__blockSub, .containerBlockthird__blockSub,
+	.containerBlockfourth__blockSub{
 		width:30%;
 	}
 	.containerBlock__blockAsnwer, .containerBlock__blockAsnwersecond,
@@ -1092,7 +1093,7 @@ footer{
     	height: 32vh;
 	}
 	.containerBlock__question, .containerBlocksecond__question, 
-	.containerBlockthird__question{
+	.containerBlockthird__question, .containerBlockfourth__question{
 		font-size: 1.3rem;
 	}
 	.blocksubText, .secondblock__subText,
@@ -1109,15 +1110,49 @@ footer{
 	}
 	.containerBlock__block,
 	.containerBlocksecond__block,
-	.containerBlockthird__block {
+	.containerBlockthird__block, .containerBlockfourth__block {
 		flex-direction: column;
 	}
 	.containerBlock__blockSub, 
 	.containerBlocksecond__blockSub, 
-	.containerBlockthird__blockSub {
+	.containerBlockthird__blockSub, .containerBlockfourth__blockSub {
     width: 85%;
 	}
 	.caixaresposta{
 		margin: 10px 191px 0 0;
+	}
+}
+/*saude  saude  saude  saude  saude  saude  saude  saude */
+.saudecontainerBlock__blockAsnwer, .saudecontainerBlock__blockAsnwersecond,
+.saudecontainerBlock__blockAsnwerthird, .saudecontainerBlocksecond__blockAsnwer,
+.saudecontainerBlockthird__blockAsnwer, .saudecontainerBlockfourth__blockAsnwer{
+	width: 20vw;
+	height: 200px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #E67816;
+}
+.saudecontainerBlockthird__blockAsnwer{
+	background-image: url(assets/rato.jpg);
+	position: relative;
+}
+.saudecontainerBlockthird__blockAsnwer:after{
+	content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: #E67816;	
+}
+@media(max-width:768px){
+	.saudecontainerBlock__blockAsnwer, .saudecontainerBlock__blockAsnwersecond,
+	.saudecontainerBlock__blockAsnwerthird, .saudecontainerBlocksecond__blockAsnwer,
+	.saudecontainerBlockthird__blockAsnwer, .saudecontainerBlockfourth__blockAsnwer{
+		min-width: 93%;
+    	height: 32vh;
 	}
 }
