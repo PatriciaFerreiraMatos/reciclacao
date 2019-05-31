@@ -994,7 +994,7 @@ footer{
 .containerBlock__blockAsnwer, .containerBlock__blockAsnwersecond,
 .containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
 .containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird,
-.containerBlockthird__blockAsnwer{
+.containerBlockthird__blockAsnwer, .meioambientecontainerBlockfourth__blockAsnwer{
 	width: 20vw;
 	height: 200px;
 	display:flex;
@@ -1009,7 +1009,8 @@ footer{
 	background-image:url(assets/barata.jpg);
 }
 .containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
-.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird{
+.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird,
+.meioambientecontainerBlockfourth__blockAsnwer{
 	background-color: #E67816;
 	background-image: none;
 }
@@ -1056,7 +1057,7 @@ footer{
 
 }
 .blocksubText, .secondblock__subText,
-.thirdblock__subText{
+.thirdblock__subText, .fourthblock__subText{
 	font:1.8rem RobotoSlab;
 	font-weight: 700;
 	color: #fff;
@@ -1088,7 +1089,7 @@ footer{
 	.containerBlock__blockAsnwer, .containerBlock__blockAsnwersecond,
 	.containerBlock__blockAsnwerthird, .containerBlocksecond__blockAsnwer,
 	.containerBlocksecond__blockAsnwersecond, .containerBlocksecond__blockAsnwerthird,
-	.containerBlockthird__blockAsnwer{
+	.containerBlockthird__blockAsnwer, .meioambientecontainerBlockfourth__blockAsnwer{
 		min-width: 93%;
     	height: 32vh;
 	}
@@ -1097,7 +1098,7 @@ footer{
 		font-size: 1.3rem;
 	}
 	.blocksubText, .secondblock__subText,
-	.thirdblock__subText{
+	.thirdblock__subText, .fourthblock__subText{
 		font-size: 1.2rem;
 	}
 	.caixaresposta{
@@ -1122,7 +1123,9 @@ footer{
 		margin: 10px 191px 0 0;
 	}
 }
+
 /*saude  saude  saude  saude  saude  saude  saude  saude */
+
 .saudecontainerBlock__blockAsnwer, .saudecontainerBlock__blockAsnwersecond,
 .saudecontainerBlock__blockAsnwerthird, .saudecontainerBlocksecond__blockAsnwer,
 .saudecontainerBlockthird__blockAsnwer, .saudecontainerBlockfourth__blockAsnwer{
@@ -1152,6 +1155,51 @@ footer{
 	.saudecontainerBlock__blockAsnwer, .saudecontainerBlock__blockAsnwersecond,
 	.saudecontainerBlock__blockAsnwerthird, .saudecontainerBlocksecond__blockAsnwer,
 	.saudecontainerBlockthird__blockAsnwer, .saudecontainerBlockfourth__blockAsnwer{
+		min-width: 93%;
+    	height: 32vh;
+	}
+}
+
+/*meioambiente meioambiente meioambiente meioambiente meioambiente meioambiente meioambiente meioambiente meioambiente */
+
+.meioambientecontainerBlock__blockAsnwer, .meioambientecontainerBlocksecond__blockAsnwer,
+.meioambientecontainerBlockthird__blockAsnwer, .meioambientecontainerBlockthird__blockAsnwersecond,
+.meioambientecontainerBlockthird__blockAsnwerthirth{
+	width: 20vw;
+	height: 200px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(assets/tampa-de-garrafa-pet.jpg);
+	position: relative;
+}
+.meioambientecontainerBlocksecond__blockAsnwer{
+	background-image:url(assets/garrafa.JPG);
+}
+.meioambientecontainerBlockthird__blockAsnwer{
+	background-image: url(assets/agua.jpg);
+}
+.meioambientecontainerBlockthird__blockAsnwersecond{
+	background-image: url(assets/areia-grossa.png);
+}
+.meioambientecontainerBlockthird__blockAsnwerthirth{
+	background-image: url(assets/barro.jpg);
+}
+.meioambientecontainerBlock__blockAsnwer:after, .meioambientecontainerBlocksecond__blockAsnwer:after{
+	content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: #E67816;
+}
+@media(max-width: 768px){
+	.meioambientecontainerBlock__blockAsnwer, .meioambientecontainerBlocksecond__blockAsnwer,
+	.meioambientecontainerBlockthird__blockAsnwer, .meioambientecontainerBlockthird__blockAsnwersecond,
+	.meioambientecontainerBlockthird__blockAsnwerthirth{
 		min-width: 93%;
     	height: 32vh;
 	}
