@@ -11,17 +11,16 @@ body{
                                                   /*INDEX*/
 .blockmenu{
     display: flex;
-    justify-content: space-between;
-    padding: 10px 25px 0 58px;
+    justify-content: space-around;
 }
 .blockmenuLogo{
-	height:12vh;
+	height:8vh;
 }
 .menu{
     min-width: 65vw;
     display: flex;
     justify-content: space-between;
-    padding: 19px 0px 0 0;
+    align-items: center;
 }
 .menuLink{
     font: 1.1rem Roboto Slab;
@@ -43,13 +42,13 @@ label{
 	height:85vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	background-image:url(assets/fundohome.jpg);
 	background-size: cover;
 }
 .blockhomeImage{
 	width:40vw;
-	margin:186px 0 0 0;
 }
 .blockhomeText{
 	max-width:40vw;
@@ -119,7 +118,7 @@ label{
     color: #00923F;
 }
 .aboutBlock__text, .containerimpactBlock__text{
-	font:.86rem Roboto Slab;
+	font:1rem Roboto Slab;
 	font-weight:300;
 	margin: 10px 0 23px 0;
 }
@@ -163,6 +162,7 @@ label{
 	top:45px;
 	background-image: url(assets/fundo-acoes.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .containeraction:after{
 	content:'';
@@ -530,7 +530,7 @@ footer{
 	text-align: center;
 }
 .submenuLink{
-	font:.9rem RobotoSlab;
+	font:1rem RobotoSlab;
 	font-weight:400;
 	color: #E67816;
 	padding: 10px 10px 0 0;
@@ -603,14 +603,13 @@ footer{
 .containerpalestasText, .containermultiraoText,
 .containeraedesText, .containercoletaText,
 .containerantecendenteText{
-	font:.9rem RobotoSlab;
+	font:1.4rem RobotoSlab;
 	font-weight:100;
 	margin-top: 10px;
 }
 .containerencontrosImage, .containercafeImage,
 .containerpalestrasImage, .containermultiraoImage,
 .containeraedesImage, .containercoletaImage{
-    width: 50vw;
     height: 40vh;
     padding: 0 0 0 15px;
 }
